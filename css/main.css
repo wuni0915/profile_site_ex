@@ -23,6 +23,16 @@ a {
   background-color: #edfaff;
 }
 
+.member2 {
+  background-color: #dbfff6;
+}
+.member3 {
+  background-color: #ffe6f9;
+}
+.member4 {
+  background-color: #e5dfff;
+}
+
 /* 프로필 카드 전체 영역 */
 
 section {
@@ -91,6 +101,16 @@ section {
   border-radius: 24px;
   color: #fff;
   box-shadow: 3px 3px 20px rgba(13, 75, 104, 0.2);
+}
+
+.member2 .mem2 {
+      background: linear-gradient(45deg, #8cffae, #75d6fc);
+}
+.member3 .mem3 {
+      background: linear-gradient(45deg, #ffc1fc, #fc75a9);
+}
+.member4 .mem4 {
+      background: linear-gradient(45deg, #e2cbff, #7e5aff);
 }
 
 /* 구글 폰트에서 겟폰트, 겟 엠비드 코드 링크는 css에 달고 폰트패밀리는 긁어서 적용할 태그 css에 넣기*/
