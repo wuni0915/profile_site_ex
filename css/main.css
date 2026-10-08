@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+/* OL은 1, 2, 3... 순서가 나온다 */
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* ------------------css reset △ */
+
+.member1 {
+  background-color: #edfaff;
+}
+
+/* 프로필 카드 전체 영역 */
+
+section {
+  width: 390px;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+/* 상단 메뉴 css */
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.manu a {
+  color: #aaa;
+  font-size: 18px;
+}
+
+/* 프로필 영역 */
+
+.profile {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  gap: 15px;
+  text-align: center;
+}
+
+/* img area */
+
+.profile-img {
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-img img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+}
+
+.profile-img:hover img {
+  transform: scale(1.1);
+}
+/* 이름 */
+.profile-text h1 {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #555;
+  font-family: "Libre Bodoni", serif;
+}
+
+.profile-text p {
+  font-size: 12px;
+  color: #888;
+}
+/* 더보기 버튼 */
+.btn-view {
+  background: linear-gradient(45deg, #10fcf0, #7592fc);
+  padding: 8px 16px;
+  border-radius: 24px;
+  color: #fff;
+  box-shadow: 3px 3px 20px rgba(13, 75, 104, 0.2);
+}
+
+/* 구글 폰트에서 겟폰트, 겟 엠비드 코드 링크는 css에 달고 폰트패밀리는 긁어서 적용할 태그 css에 넣기*/
+
+/* 연락처목록 영역 */
+.link-contact {
+  /* background-color: #10fcf0; */
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 15px; */
+}
+
+.contact li {
+  color: #888;
+  padding: 10px 0;
+  border-bottom: 1px solid #a88787;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.contact li i {
+}
+
+.fa-square-facebook {
+  font-size: 18px;
+  /* color: red; */
+}
+
+.contact li:nth-child(2) {
+  padding-top: 5p;
+  border: none;
+}
+
+.contact span {
+  font-family: "Google Sans", sans-serif;
+}
+
+/* 멤버별 프로필 링크 영역 */
+
+.others {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.others a {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #e8a9f3;
+  filter: saturate(0.7);
+  filter: opacity(0.4);
+}
+/* filter: saturate(); 채도/ 1이 제일 선명하다*/
+
+.others a:nth-of-type(1) {
+    background-color: #35e0f7;
+}
+/* .others a:nth-of-type(1) {} 첫번째 자식이면서 a인 태그를 찾아라 */
+
+.others a:nth-of-type(2) {
+    background-color: #55f5cd;
+
+}
+.others a:nth-of-type(3) {
+    background-color: #ff80df;
+
+}
+.others a:nth-of-type(4){
+background-color: #a794fd;
+}
+
+.others a.on {
+      filter: saturate(1);
+  filter: opacity(1);
+}
+/* .others a.on {} a중에 클래스가 더해져있는것 */
